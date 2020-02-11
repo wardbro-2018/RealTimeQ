@@ -1,0 +1,44 @@
+.loginForm {
+    width: 30vw;
+    background-color: #031D44;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 15vh;
+    margin-left: 8vw;
+}
+.loginInput{
+    background-color: #1f1a33;
+    color: #01BAEF;
+    
+}
+h2{
+    color: #01BAEF;
+    font-family: serif;
+    font-style: oblique;
+    text-align: center;
+    margin-bottom: 20px;
+}
+/* 
+h1 {
+    font-size: 4rem;
+    color: #01BAEF;
+    text-align: center;
+    font-family: serif;
+    font-style: oblique;
+} */
+
+label{
+    color: #01BAEF;
+}
+.loginBlurb {
+    width: 30vw;
+    background-color: #031D44;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 15vh;
+    margin-right: 8vw;
+
+}
+p{
+    color: #01BAEF;
+}
