@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import "./login.css";
+import { ToastHeader } from "reactstrap";
 
 export class Login extends Component {
+  state = {email:"", password:""}
   render() {
     return (
       <div className="d-flex justify-content-between">
@@ -11,6 +13,7 @@ export class Login extends Component {
             <div className="form-group">
               <label for="exampleInputEmail1">Email address</label>
               <input
+                onChange={e=>this.setState({email:e.target.value})}
                 type="email"
                 class="form-control loginInput"
                 id="exampleInputEmail1"
@@ -24,13 +27,14 @@ export class Login extends Component {
             <div className="form-group">
               <label for="exampleInputPassword1">Password</label>
               <input
+                onChange={e=>this.setState({password:e.target.value})}
                 type="password"
                 class="form-control loginInput"
                 id="exampleInputPassword1"
                 placeholder="Password"
               />
             </div>
-            <button type="submit" className="btn loginInput">
+            <button type="submit" className="btn loginInput" onClick={()=>fetch()}>
               Submit
             </button>
           </div>
